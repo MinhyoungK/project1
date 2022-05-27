@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number One Palace Hotel</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset_css.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		const isMobile = () => {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    }
+    if(isMobile()){
+        document.location = "/project1/m_index"
+    }
+	</script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="toTop"><a href=""><img src="images/btn_top.png" alt="탑버튼"></a></div>
+    <header id="header" class="clearfix">
+		<div class="top">
+			<!-- <div class="logo"><h1 id="logo"><a href=""><img src="images/small_icons/logo_white.png" alt=""></a></h1></div> -->
+			<div class="logo"><h1 id="logo"><a href="">Number One Palace Hotel</a></h1></div>
+			<div class="menu">
+				<nav id="gnb">
+					<ul>
+						<li>
+							<a href="" class="gnb_title">INTRODUCTION</a>
+							<ul>
+								<li><a href="">넘버원 소개</a></li>
+								<li><a href="">객실 소품사진 둘러보기</a></li>
+								<li><a href="">찾아오시는 길</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="" class="gnb_title">SERVICE</a>
+							<ul>
+								<li><a href="">만족도 1위</a></li>
+								<li><a href="">선물 무료증정 이벤트</a></li>
+								<li><a href="">무료 숙박비 이벤트</a></li>
+								<li><a href="">차량 무료주차 패키지</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="" class="gnb_title">ROOM</a>
+							<ul>
+								<li><a href="">객실보기</a></li>
+								<li><a href="">객실예약</a></li>
+								<li><a href="">환불규정</a></li>
+								<li><a href="">주차요금 안내</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="" class="gnb_title">TOUR</a>
+							<ul>
+								<li><a href="">근처 둘러보기</a></li>
+								<li><a href="">근처 가볼만한 곳</a></li>
+								<li><a href="">제1 여객터미널</a></li>
+								<li><a href="">제2 여객터미널</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="" class="gnb_title">COMMUNITY</a>
+							<ul>
+								<li><a href="">이용후기</a></li>
+								<li><a href="">네이버 후기</a></li>
+								<li><a href="">자주 묻는 질문</a></li>
+								<li><a href="">예약 문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="utils"><a href="">KOR</a></div>
+		</div>
+		<div class="main_txt">
+			<div class="slogan">
+				<strong>One Name For Your All Needs</strong>
+			</div>
+			<div class="room_search">
+				<form action="submit">
+					<ul>
+						<li>
+							<div class="list">
+								<div class="label">ROOM TYPE</div>
+								<dl>
+									<dt><a href="">Choose Your Room<span></span></a></dt>
+									<dd>
+										<ul>
+											<li><a href="">CLASSIC</a></li>
+											<li><a href="">MODERN</a></li>
+											<li><a href="">CAPSULE</a></li>
+											<li><a href="">OCEAN VIEW FRENCH</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<select style="display: none;">
+									<option>CLASSIC</option>
+									<option>MODERN</option>
+									<option>CAPSULE</option>
+									<option>OCEAN VIEW FRENCH</option>
+								</select>
+							</div>
+						</li>
+						<li class="hotel">
+							<div class="label">HOTEL</div>
+							<dl>
+								<dt><a href="">Number One Hotel<span></span></a></dt>
+								<dd>
+									<ul>
+										<li><a href="">INCHEON</a></li>
+										<li><a href="">SONG-DO</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<select style="display: none;">
+								<option>INCHEON</option>
+								<option>SONG-DO</option>
+							</select>
+						</li>
+						<li class="checkIn">
+							<div class="label">CHECK IN / OUT</div>
+							<div class="cal">2022.01.06 - 2022.01.08</div>
+						</li>
+						<li class="count">
+							<ul>
+								<li class="room">
+									<div class="label">ROOM</div>
+									<dl>
+										<dt><a href="">1</a></dt>
+										<dd>
+											<ul>
+												<li><a href="">1</a></li>
+												<li><a href="">2</a></li>
+												<li><a href="">3</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<select style="display: none;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</li>
+								<li class="adult">
+									<div class="label">ADULT</div>
+									<dl>
+										<dt><a href="">1</a></dt>
+										<dd>
+											<ul>
+												<li><a href="">1</a></li>
+												<li><a href="">2</a></li>
+												<li><a href="">3</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<select style="display: none;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</li>
+								<li class="child">
+									<div class="label">CHILDREN</div>
+									<dl>
+										<dt><a href="">1</a></dt>
+										<dd>
+											<ul>
+												<li><a href="">1</a></li>
+												<li><a href="">2</a></li>
+												<li><a href="">3</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<select style="display: none;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<input type="submit" value="SEARCH"> 
+				</form>
+			</div>
+		</div>
+		<div class="slider">
+			<!-- <div class="slider_moving"></div> -->
+			<ul>
+				<li><img src="images/bg_image1.png" alt="background img"></li>
+				<li><img src="images/bg_image2.png" alt="background img"></li>
+				<li><img src="images/bg_image3.png" alt="background img"></li>
+				<li><img src="images/bg_image4.png" alt="background img"></li>
+				<li><img src="images/bg_image5.png" alt="background img"></li>
+			</ul>
+		</div>
+
+		<div class="icon-scroll">
+			<span class="txt-scroll">SCROLL</span>
+			<img src="images/scroll_btn.png" class="ico-scroll" alt="">
+			<div class="arrows-scroll"><span></span><span></span><span></span></div>
+		</div>
+	</header>
+	<section id="page1">
+		<div class="inner clearfix">
+			<div class="title">
+				<h2>
+					special <br><span>OFFERS</span>
+				</h2>
+			</div>
+			<div class="offer_list">
+				<ul>
+					<li>
+						<img src="images/free_gift.png" alt="증정품">
+						<div class="information">
+							<div class="label">ENJOY FREE GIFTS</div>
+							<div class="desc">Open event! 넘버원 & 플라이 미 투더문 숙박 고객님들께<br> 귀마개, 안대, 셀카봉 등을 무료로 드립니다. 자세한 사항은<br>호텔에 문의 바랍니다.</div>
+						</div>
+						<div class="more"><a href="">세부사항 보기</a></div>
+					</li>
+					<li>
+						<img src="images/free_accomodation.png" alt="숙박">
+						<div class="information">
+							<div class="label">FREE ACCOMMODATION</div>
+							<div class="desc">네이버, 다음 블로그등에 후기를 작성하신 분들께 한하여 숙박비<br> 2만원 or 전액을 지원해드립니다. 자세한 사항은 호텔에 문의<br>바랍니다.</div>
+						</div>
+						<div class="more"><a href="">세부사항 보기</a></div>
+					</li>
+					<li>
+						<img src="images/free_parking.png" alt="주차">
+						<div class="information">
+							<div class="label">PARK YOUR CAR FOR FREE</div>
+							<div class="desc">넘버원 팰리스를 이용하시는 모든분들께 1일 주차권을<br>드립니다. 프렌치, 스페셜 객실 예약시에는 5일 주차권을<br>드립니다.</div>
+						</div>
+						<div class="more"><a href="">세부사항 보기</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="page2">
+		<div class="inner clearfix">
+			<div class="title">
+				<h2>
+					comfortable <br><span>ROOMS</span>
+				</h2>
+			</div>
+			<div class="room_list">
+				<ul>
+					<li><a href="">CAPSULE</a></li>
+					<li><a href="">MODERN</a></li>
+					<li><a href="">CLASSIC</a></li>
+					<li><a href="">OCEAN VIEW FRENCH</a></li>
+				</ul>
+			</div>
+			<div class="banner_list">
+				<div class="controls">
+					<a href="" class="prev">prev</a>
+					<a href="" class="next">next</a>
+				</div>
+				<div class="slider_moving">
+					<div class="room_type">
+						<ul>
+							<li>
+								<div class="dimmed_image"><img src="images/capsule_03.png" alt="slider3"></div>
+								<div class="image">
+									<a href=""><img src="images/capsule_01.png" alt="slider1"></a>
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">장거리 비행의 피로를 해결해 줄 편안한 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/capsule_01.png" alt="slider1"></div>
+								<div class="image">
+									<img src="images/capsule_02.png" alt="slider2">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">설렘과 희망이 가득한 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/capsule_02.png" alt="slider2"></div>
+								<div class="image">
+									<img src="images/capsule_03.png" alt="slider3">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">집과 같은 편안한 분위기의 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/modern_03.png" alt="slider3"></div>
+								<div class="image">
+									<img src="images/modern_01.png" alt="slider1">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">장거리 비행의 피로를 해결해 줄 편안한 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/modern_01.png" alt="slider1"></div>
+								<div class="image">
+									<img src="images/modern_02.png" alt="slider2">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">설렘과 희망이 가득한 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/modern_02.png" alt="slider2"></div>
+								<div class="image">
+									<img src="images/modern_03.png" alt="slider3">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">집과 같은 편안한 분위기의 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/classic_03.png" alt="slider3"></div>
+								<div class="image">
+									<img src="images/classic_01.png" alt="slider1">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">장거리 비행의 피로를 해결해 줄 편안한 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/classic_01.png" alt="slider1"></div>
+								<div class="image">
+									<img src="images/classic_02.png" alt="slider2">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">설렘과 희망이 가득한 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/classic_02.png" alt="slider2"></div>
+								<div class="image">
+									<img src="images/classic_03.png" alt="slider3">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">집과 같은 편안한 분위기의 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/ocean_03.png" alt="slider3"></div>
+								<div class="image">
+									<img src="images/ocean_01.png" alt="slider1">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">장거리 비행의 피로를 해결해 줄 편안한 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/ocean_01.png" alt="slider1"></div>
+								<div class="image">
+									<img src="images/ocean_02.png" alt="slider2">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">설렘과 희망이 가득한 숙소</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dimmed_image"><img src="images/ocean_02.png" alt="slider2"></div>
+								<div class="image">
+									<img src="images/ocean_03.png" alt="slider3">
+									<div class="room_info">
+										<span>NUMBER ONE PALACE INCHEON</span>
+										<span class="detail">집과 같은 편안한 분위기의 숙소</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+			</div>
+		</div>
+	</section>
+	<section id="page3">
+		<div class="inner clearfix">
+			<div class="title">
+				<h2>
+					spectacular <br><span>ATTRACTION</span>
+				</h2>
+				<span class="info">
+					멋진 자연경관과 역사 이야기<br>
+					시대를 넘나드는 감성이 어우러진 도시<br>
+					인천의 명소를 소개합니다.
+				</span>
+			</div>
+			<div class="controls">
+				<a href="" class="prev">prev</a>
+				<a href="" class="next">next</a>
+			</div>
+			<div class="banner_list clearfix">
+				<ul>
+					<li>
+						<div class="banner1">
+							<a href="">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/wolmido.png" alt="대교">
+								<span class="label">wolmido</span>
+								<p class="over">
+									<span class="name_eng">WOLMIDO</span>
+									<span class="name_kor">월미도</span>
+									<span class="desc">
+										인천의 대표 명소 월미도에서<br>잊지못할 추억을 만들어보세요 
+									</span>
+								</p>
+							</a>
+						</div>
+						<div class="banner2">
+							<a href="">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/incheon_bridge.png" alt="대교">
+								<span class="label">incheon bridge<br>oceanscape</span>
+								<p class="over">
+									<span class="name_eng">INCHEON BRIDGE<br>OCEANSCAPE</span>
+									<span class="name_kor">인천대교</span>
+									<span class="desc">
+										인천대교 전망대에서<br>환상적인 인천의 야경을 감상하세요 
+									</span>
+								</p>
+							</a>
+						</div>
+						<div class="banner3">
+							<a href="">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/golf.png" alt="골프">
+								<span class="label">sky 72 golf</span>
+								<p class="over">
+									<span class="name_eng">SKY 72 GOLF</span>
+									<span class="name_kor">스카이 72 골프 리조트</span>
+									<span class="desc">
+										 자연을 머금은 평화로운 경치의<br>스카이 골프 리조트에서 멋진 샷을 날려보세요. 
+									</span>
+								</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="banner1">
+							<a href="" class="active">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/china.png" alt="차이나타운">
+								<span class="label">china town</span>
+								<p class="over">
+									<span class="name_eng">CHINA TOWN</span>
+									<span class="name_kor">차이나타운</span>
+									<span class="desc">
+										한국안의 작은 중국 차이나타운에서<br>색다른 경험을 해보세요
+									</span>
+								</p>
+							</a>
+						</div>
+						<div class="banner2">
+							<a href="">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/temple.png" alt="용궁사">
+								<span class="label">yonggung temple</span>
+								<p class="over">
+									<span class="name_eng">YONGGUNG TEMPLE</span>
+									<span class="name_kor">용궁사</span>
+									<span class="desc">
+										자연 속의 맑은 공기를 마시며<br>용궁사의 평화로움을 느껴보세요
+									</span>
+								</p>
+							</a>
+						</div>
+						<div class="banner3">
+							<a href="">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/park.png" alt="자유공원">
+								<span class="label">jayu park</span>
+								<p class="over">
+									<span class="name_eng">JAYU PARK</span>
+									<span class="name_kor">자유공원</span>
+									<span class="desc">
+										 도심 속의 작은 오아시스같은 <br>자유공원에서 산책을 즐겨보세요
+									</span>
+								</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="banner1">
+							<a href="" class="active">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/village.png" alt="동화마을">
+								<span class="label">Fairy Tale<br>Village</span>
+								<p class="over">
+									<span class="name_eng">FAIRY TALE<br>VILLAGE</span>
+									<span class="name_kor">동화마을</span>
+									<span class="desc">
+										동화보다 동화같은 <br>송월동 동화마을에 방문해 보세요
+									</span>
+								</p>
+							</a>
+						</div>
+						<div class="banner2">
+							<a href="">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/shinpo.png" alt="국제시장">
+								<span class="label">sinpo international<br>market</span>
+								<p class="over">
+									<span class="name_eng">SINPO INTERNATIONAL<br>MARKET</span>
+									<span class="name_kor">신포국제시장</span>
+									<span class="desc">
+										인천의 명물 신포국제시장에서<br>다양한 먹거리를 체험해보세요
+									</span>
+								</p>
+							</a>
+						</div>
+						<div class="banner3">
+							<a href="">
+								<div class="table"></div>
+								<div class="dim"></div>
+								<img src="images/beach.png" alt="마시안해변">
+								<span class="label">masian beach</span>
+								<p class="over">
+									<span class="name_eng">MASIAN BEACH</span>
+									<span class="name_kor">마시안 해변</span>
+									<span class="desc">
+										 환상적인 노을을 즐길 수 있는<br>마시안해변을 방문해보세요 
+									</span>
+								</p>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="page4">
+		<div class="inner clearfix">
+			<div class="title">
+				<h2>
+					flavorful<br><span>EATERIES</span>
+				</h2>
+			</div>
+			<div class="food_info">
+				<div class="arrow"><a href=""><img src="images/arrow_btn.png" alt="바로가기"></a></div>
+				<ul>
+					<li class="current">
+						<h3 class="label">마시안어부집</h3>
+						<span class="desc">
+							매일 신선한 조개를 공수해오는<br>
+							조개구이 맛집, 눈 앞에 서해바다를 배경으로<br> 
+							테라스에서 즐기는 경치까지 좋은 맛집
+						</span>
+					</li>
+					<li>
+						<h3 class="label">핏제리아 나폴리</h3>
+						<span class="desc">
+							나폴리의 전통피자를<br>
+							아름다운 인천의 앞바다에서 즐길 수 있는<br> 
+							분위기와 맛 모두 잡은 핫플레이스
+						</span>
+					</li>
+					<li>
+						<h3 class="label">임페리얼 트레져</h3>
+						<span class="desc">
+							2020 미쉐린 가이드 런던판에서<br>
+							미쉐린 더 플레이트를 획득한 <br> 
+							인천 최고 파인 다이닝 중식당
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="banner_list">
+				<div class="controls">
+					<a href="" class="prev">prev</a>
+					<a href="" class="next">next</a>
+				</div>
+				<div class="slider_moving">
+					<ul>
+						<li>
+                            <div class="image">
+								<img src="images/seafood.png" alt="slider1">
+							</div>
+							<div class="next_img">
+								<img src="images/pizza.png" alt="slider2">
+							</div>
+						</li>
+						<li>
+							<div class="image"><img src="images/pizza.png" alt="slider2"></div>
+							<div class="next_img"><img src="images/chicken.png" alt="slider3"></div>
+						</li>
+						<li>
+							<div class="image"><img src="images/chicken.png" alt="slider3"></div>
+							<div class="next_img"><img src="images/seafood.png" alt="slider1"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="banner_label">
+					<ul>
+						<li class="on"><span><strong>01.</strong>Seafood Barbeque</span></li>
+						<li><span><strong>02.</strong>Italian Pizza & Pasta</span></li>
+						<li><span><strong>03.</strong>Chinese Fine Dining</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="page5">
+		<div class="inner clearfix">
+			<div class="title">
+				<h2>
+					valuable<br><span>REVIEWS</span>
+				</h2>
+			</div>
+			<div class="slider_bar">
+				<ul>
+					<li class="current"><a href="">slider 1</a></li>
+					<li><a href="">slider 2</a></li>
+					<li><a href="">slider 3</a></li>
+					<li><a href="">slider 4</a></li>
+					<li><a href="">slider 5</a></li>
+				</ul>
+			</div>
+			<div class="review_list">
+				<div class="review">
+					<ul class="moving">
+						<li>
+							<a href="">
+								<div class="dim">
+									<span>자세히 보기</span>
+								</div>
+							</a>
+							<img src="images/reveiw_01.png" alt="리뷰1">
+							<h3 class="label">BEST NAVER REVIEW</h3>
+							<span class="desc">
+								기대안하고 예약했는데 넘 좋았어요 ~ 모든 장신구 하나하나 
+								인테리어에 신경썼다는 느낌도 있었고 방도 넓고 아늑하니 
+								애들도 무척 좋아했습니다 수건도 넉넉히 깔끔하게 정리되어
+								있었고요~ 왜 이곳을 이제야 알았는지  가구나 바닥등이 
+								오래된 느낌은 있으나 고급스럽고 편의점도 1층에 있어 
+								완전편리 그 자체네요 갈일있음 또 이용할래요~~~
+							</span>
+						</li>
+						<li>
+							<div class="dim"><a href=""><span>자세히 보기</span></a></div>
+							<img src="images/reveiw_02.png" alt="리뷰2">
+							<h3 class="label">BEST DAUM REVIEW</h3>
+							<span class="desc">
+								객실에 들어서자마 넓고 아늑하고 화려한 분위기에 피곤함이 눈녹듯이 사라졌습니다.
+								침구도 정말 깨끗하고요 보송보송 관리가 잘 돼있네요! 매트리스도 좋은 걸 쓰시는지
+								침대 체질 아닌 신랑까지 대만족했어요 :)예쁜 소품들, 화장대 의자 방석에 예쁜 리본 매듭이며
+								고가의 안마 의자 (정말 기능성 최고여요)
+								럭셔리한 테이블과 실크 카페트, 멋진 액자 음악을 들을 수 있는 아이팟
+								등등 사장님께서 소품 하나하나 신경쓰셨다는 게 눈에 확 보여요
+							</span>
+						</li>
+						<li>
+							<div class="dim"><a href=""><span>자세히 보기</span></a></div>
+							<img src="images/reveiw_03.png" alt="리뷰3">
+							<h3 class="label">BEST CUSTOMER REVIEW</h3>
+							<span class="desc">
+								몽골 출장 차 이른 새벽 출발해야 되서, 급하게 인천공항 근처 숙소를 찾았습니다.
+								공항 근처에는 호텔, 모텔 등 다양한 숙소가 있지만 저처럼 혼자 온 여행객이 들리기에는 
+								부담스러운 가격에 상대적으로 저렴한 캡슐호텔을 찾았습니다.솔직히 기대보다는 잠시 쉬었다 가자는 
+								마음으로 도착한 숙소에 깜짝 놀랐습니다.이 가격에 나올 수 없는 퀄리티와 서비스에.. 여행가기전 힐링하고 갑니다^^
+							</span>
+						</li>
+						<li>
+							<img src="images/reveiw_02.png" alt="리뷰4">
+							<h3 class="label">BEST CUSTOMER REVIEW</h3>
+							<span class="desc">
+								기대안하고 예약했는데 넘 좋았어요 ~ 모든 장신구 하나하나 
+								인테리어에 신경썼다는 느낌도 있었고 방도 넓고 아늑하니 
+								애들도 무척 좋아했습니다 수건도 넉넉히 깔끔하게 정리되어
+								있었고요~ 왜 이곳을 이제야 알았는지  가구나 바닥등이 
+								오래된 느낌은 있으나 고급스럽고 ...
+							</span>
+						</li>
+						<li>
+							<div class="dim"><a href=""><span>자세히 보기</span></a></div>
+							<img src="images/reveiw_01.png" alt="리뷰5">
+							<h3 class="label">BEST CUSTOMER REVIEW</h3>
+							<span class="desc">
+								기대안하고 예약했는데 넘 좋았어요 ~ 모든 장신구 하나하나 
+								인테리어에 신경썼다는 느낌도 있었고 방도 넓고 아늑하니 
+								애들도 무척 좋아했습니다 수건도 넉넉히 깔끔하게 정리되어
+								있었고요~ 왜 이곳을 이제야 알았는지  가구나 바닥등이 
+								오래된 느낌은 있으나 고급스럽고 편의점도 1층에 있어 
+								완전편리 그 자체네요 갈일있음 또 이용할래요~~~
+							</span>
+						</li>
+						<li>
+							<div class="dim"><a href=""><span>자세히 보기</span></a></div>
+							<img src="images/reveiw_03.png" alt="리뷰5">
+							<h3 class="label">BEST CUSTOMER REVIEW</h3>
+							<span class="desc">
+								객실에 들어서자마 넓고 아늑하고 화려한 분위기에 피곤함이 눈녹듯이 사라졌습니다.
+								침구도 정말 깨끗하고요 보송보송 관리가 잘 돼있네요! 매트리스도 좋은 걸 쓰시는지
+								침대 체질 아닌 신랑까지 대만족했어요 :)예쁜 소품들, 화장대 의자 방석에 예쁜 리본 매듭이며
+								고가의 안마 의자 (정말 기능성 최고여요)
+								럭셔리한 테이블과 실크 카페트, 멋진 액자 음악을 들을 수 있는 아이팟
+								등등 사장님께서 소품 하나하나 신경쓰셨다는 게 눈에 확 보여요
+							</span>
+						</li>
+						<li>
+							<a href="">
+								<div class="dim">
+									<span>자세히 보기</span>
+								</div>
+							</a>
+							<img src="images/reveiw_01.png" alt="리뷰5">
+							<h3 class="label">BEST CUSTOMER REVIEW</h3>
+							<span class="desc">
+								몽골 출장 차 이른 새벽 출발해야 되서, 급하게 인천공항 근처 숙소를 찾았습니다.
+								공항 근처에는 호텔, 모텔 등 다양한 숙소가 있지만 저처럼 혼자 온 여행객이 들리기에는 
+								부담스러운 가격에 상대적으로 저렴한 캡슐호텔을 찾았습니다.솔직히 기대보다는 잠시 쉬었다 가자는 
+								마음으로 도착한 숙소에 깜짝 놀랐습니다.이 가격에 나올 수 없는 퀄리티와 서비스에.. 여행가기전 힐링하고 갑니다^^
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="inner clearfix">
+			<div class="flogo">Number One Palace Hotel</div>
+			<div class="right">
+				<div class="quick">
+					<ul>
+						<li><a href="">고객센터</a></li>
+						<li><a href="">이용약관</a></li>
+						<li><a href="">개인정보처리방침</a></li>
+						<li><a href="">사이트맵</a></li>
+						<li><a href="">이메일무단수집금지</a></li>
+					</ul>
+				</div>
+				<div class="cs">
+					<ul>
+						<li><a href="">예약 문의 및 상담 032-743-1124</a></li>
+						<li><a href="">카카오톡 상담 ID : no1hotel</a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					설립일 : 2019 년 01월 17일 | 개인정보책임자 이메일 : <a href="">numberoneguest7@gmail.com</a><br>
+					주소 : 인천광역시 중구 운서동 2850-5 203호<br>
+					업체명 : 인천공항 캡슐호텔 넘버원 사업자등록번호 : 180-51-00424  사업자명 : 정세종<br>
+					Copyright numberoneguesthouse Co. Ltd. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
